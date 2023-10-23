@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		B7539F822AE722760092E1D9 /* OkusuReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539F812AE722760092E1D9 /* OkusuReminderApp.swift */; };
-		B7539F842AE722760092E1D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539F832AE722760092E1D9 /* ContentView.swift */; };
 		B7539F862AE722770092E1D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7539F852AE722770092E1D9 /* Assets.xcassets */; };
 		B7539F892AE722770092E1D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7539F882AE722770092E1D9 /* Preview Assets.xcassets */; };
+		B7539F932AE722F10092E1D9 /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539F922AE722F10092E1D9 /* FirstModel.swift */; };
+		B7539F952AE723010092E1D9 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539F942AE723010092E1D9 /* FirstView.swift */; };
+		B7539F972AE723120092E1D9 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539F962AE723120092E1D9 /* FirstViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7539F7E2AE722760092E1D9 /* OkusuReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkusuReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7539F812AE722760092E1D9 /* OkusuReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkusuReminderApp.swift; sourceTree = "<group>"; };
-		B7539F832AE722760092E1D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7539F852AE722770092E1D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7539F882AE722770092E1D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7539F922AE722F10092E1D9 /* FirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModel.swift; sourceTree = "<group>"; };
+		B7539F942AE723010092E1D9 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		B7539F962AE723120092E1D9 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				B7539F812AE722760092E1D9 /* OkusuReminderApp.swift */,
-				B7539F832AE722760092E1D9 /* ContentView.swift */,
-				B7539F852AE722770092E1D9 /* Assets.xcassets */,
+				B7539F8F2AE7229A0092E1D9 /* Model */,
+				B7539F902AE722A30092E1D9 /* View */,
+				B7539F912AE722CA0092E1D9 /* ViewModel */,
 				B7539F872AE722770092E1D9 /* Preview Content */,
 			);
 			path = OkusuReminder;
@@ -62,9 +67,34 @@
 		B7539F872AE722770092E1D9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				B7539F852AE722770092E1D9 /* Assets.xcassets */,
 				B7539F882AE722770092E1D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7539F8F2AE7229A0092E1D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7539F922AE722F10092E1D9 /* FirstModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7539F902AE722A30092E1D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7539F942AE723010092E1D9 /* FirstView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7539F912AE722CA0092E1D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7539F962AE723120092E1D9 /* FirstViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7539F842AE722760092E1D9 /* ContentView.swift in Sources */,
+				B7539F932AE722F10092E1D9 /* FirstModel.swift in Sources */,
+				B7539F952AE723010092E1D9 /* FirstView.swift in Sources */,
 				B7539F822AE722760092E1D9 /* OkusuReminderApp.swift in Sources */,
+				B7539F972AE723120092E1D9 /* FirstViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
