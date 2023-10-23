@@ -9,7 +9,17 @@ import SwiftUI
 
 struct FirstView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("おくすリマインダー")
+                .font(.largeTitle)
+                .offset(y: -30)
+            Image("grandma")
+                .resizable()
+                .frame(width :180, height: 280)
+            Capsule()
+                .frame(width: 300, height: 100)
+                .offset(y: 40)
+        }
     }
 }
 
