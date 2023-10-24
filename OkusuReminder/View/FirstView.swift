@@ -20,11 +20,11 @@ struct FirstView: View {
             Capsule()
                 .frame(width: 300, height: 100)
                 .offset(y: 50)
-            
         }
-        
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.orange)
+       
     }
-      
 }
 
 struct FirstView_Previews: PreviewProvider {

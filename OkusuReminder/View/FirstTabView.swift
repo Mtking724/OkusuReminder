@@ -18,10 +18,13 @@ struct FirstTabView: View {
             Text(FormattDate(currentDate))
                 .font(.headline)
             Spacer()
+            
+            ZStack {
+                
+            }
         }
     }
 }
-
 private func FormattDate(_ date: Date) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
