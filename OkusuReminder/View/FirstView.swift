@@ -20,6 +20,9 @@ struct FirstView: View {
             Capsule()
                 .frame(width: 300, height: 100)
                 .offset(y: 50)
+            Button("スタート") {
+                
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.orange)
