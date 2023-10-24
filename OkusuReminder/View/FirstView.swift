@@ -11,7 +11,6 @@ struct FirstView: View {
     var body: some View {
         
         VStack {
-           
             Text("おくすリマインダー")
                 .font(.largeTitle.bold())
                 .offset(y: -40)
