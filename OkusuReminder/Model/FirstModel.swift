@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+//画面遷移のためのロジック
+class FirrstViewModel: ObservableObject {
+    @Published var isLinkActive = false//falseにすることで画面遷移のトリガーを制御
+    
+    
+    func NavigateToFirstTabView() {
+        isLinkActive = true//画面遷移をトリガーする。
+    }
+}
