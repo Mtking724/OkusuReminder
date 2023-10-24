@@ -12,6 +12,20 @@ struct OkusuReminderApp: App {
     var body: some Scene {
         WindowGroup {
             FirstView()
+            TabView {
+                FirstTabView()
+                    .tabItem{
+                        Image(systemName: "house")
+                    }
+                SecondTabView()
+                    .tabItem {
+                        Image(systemName: "calender")
+                    }
+                ThirdTabView()
+                    .tabItem {
+                        Image(systemName: "gearshape")
+                    }
+            }
         }
     }
 }
