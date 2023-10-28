@@ -16,6 +16,8 @@
 		B7539F9F2AE7F0E00092E1D9 /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539F9E2AE7F0E00092E1D9 /* FirstTabView.swift */; };
 		B7539FA12AE7F0EE0092E1D9 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539FA02AE7F0EE0092E1D9 /* SecondTabView.swift */; };
 		B7539FA32AE7F0FB0092E1D9 /* ThirdTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539FA22AE7F0FB0092E1D9 /* ThirdTabView.swift */; };
+		B7539FAA2AED64A20092E1D9 /* MochiyPopOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7539FA82AED64A20092E1D9 /* MochiyPopOne-Regular.ttf */; };
+		B7539FAB2AED64A20092E1D9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B7539FA92AED64A20092E1D9 /* OFL.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		B7539F9E2AE7F0E00092E1D9 /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
 		B7539FA02AE7F0EE0092E1D9 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 		B7539FA22AE7F0FB0092E1D9 /* ThirdTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabView.swift; sourceTree = "<group>"; };
+		B7539FA82AED64A20092E1D9 /* MochiyPopOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MochiyPopOne-Regular.ttf"; sourceTree = "<group>"; };
+		B7539FA92AED64A20092E1D9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B7539FAC2AED64E60092E1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,8 @@
 		B7539F802AE722760092E1D9 /* OkusuReminder */ = {
 			isa = PBXGroup;
 			children = (
+				B7539FAC2AED64E60092E1D9 /* Info.plist */,
+				B7539FA42AED64560092E1D9 /* fonts */,
 				B7539F812AE722760092E1D9 /* OkusuReminderApp.swift */,
 				B7539F8F2AE7229A0092E1D9 /* Model */,
 				B7539F902AE722A30092E1D9 /* View */,
@@ -104,6 +111,23 @@
 				B7539F962AE723120092E1D9 /* FirstViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7539FA42AED64560092E1D9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B7539FA72AED64A20092E1D9 /* Mochiy_Pop_One */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		B7539FA72AED64A20092E1D9 /* Mochiy_Pop_One */ = {
+			isa = PBXGroup;
+			children = (
+				B7539FA82AED64A20092E1D9 /* MochiyPopOne-Regular.ttf */,
+				B7539FA92AED64A20092E1D9 /* OFL.txt */,
+			);
+			path = Mochiy_Pop_One;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7539F892AE722770092E1D9 /* Preview Assets.xcassets in Resources */,
+				B7539FAA2AED64A20092E1D9 /* MochiyPopOne-Regular.ttf in Resources */,
+				B7539FAB2AED64A20092E1D9 /* OFL.txt in Resources */,
 				B7539F862AE722770092E1D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +340,7 @@
 				DEVELOPMENT_TEAM = WS47T5734P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OkusuReminder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +370,7 @@
 				DEVELOPMENT_TEAM = WS47T5734P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OkusuReminder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
