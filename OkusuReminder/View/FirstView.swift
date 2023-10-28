@@ -18,9 +18,6 @@ struct FirstView: View {
                 .font(.largeTitle)
                 .bold()
                 .offset(y: -40)
-               
-                
-                
             Image("grandma")
                 .resizable()
                 .frame(width: 200, height: 280)
@@ -45,7 +42,7 @@ struct RoundedButtonStyle: ButtonStyle {
             .padding()
             .foregroundColor(.white)
             .background(Color.mint)
-            .cornerRadius(15)
+            .cornerRadius(30)
             //ボタンを押すと透明になる。
             .opacity(configuration.isPressed ? 0.2 : 1)
     }
