@@ -54,6 +54,8 @@ struct FirstTabView: View {
                 
             }
         
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.orange)
         }
     }
 
