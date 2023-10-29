@@ -21,7 +21,7 @@ struct FirstView: View {
             Image("grandma")
                 .resizable()
                 .frame(width: 200, height: 280)
-                .offset(y: -20)
+                .offset(y: -25)
             Button(action: {}) {
                 Text("スタート")
                     .font(Font.custom("MochiyPopOne-Regular", size: 30))
@@ -42,7 +42,7 @@ struct RoundedButtonStyle: ButtonStyle {
             .padding()
             .foregroundColor(.white)
             .background(Color.mint)
-            .cornerRadius(30)
+            .cornerRadius(35)
             //ボタンを押すと透明になる。
             .opacity(configuration.isPressed ? 0.2 : 1)
     }
