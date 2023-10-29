@@ -13,8 +13,8 @@ struct AllTabView: View {
             FirstTabView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "house")
-                        Text("HOME")
+                        Image(systemName: "pill.circle.fill")
+                        Text("今日のくすり")
                     }
             }.tag(1)
             SecondTabView()
