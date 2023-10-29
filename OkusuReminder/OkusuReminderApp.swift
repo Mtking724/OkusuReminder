@@ -16,24 +16,6 @@ struct OkusuReminderApp: App {
     }
 }
 
-struct ContentView: View {
-    var body: some View {
-        TabView {
-            FirstTabView()
-                .tabItem{
-                    Image(systemName: "house")
-                }
-            SecondTabView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                }
-            ThirdTabView()
-                .tabItem {
-                    Image(systemName: "gearshape")
-                }
-        }
-    }
-}
 
 
 
