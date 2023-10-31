@@ -19,9 +19,13 @@
 		B7539FAA2AED64A20092E1D9 /* MochiyPopOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7539FA82AED64A20092E1D9 /* MochiyPopOne-Regular.ttf */; };
 		B7539FAB2AED64A20092E1D9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B7539FA92AED64A20092E1D9 /* OFL.txt */; };
 		B7539FD22AEE3DB80092E1D9 /* AllTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539FD12AEE3DB80092E1D9 /* AllTabView.swift */; };
+		B753A0112AF1343B0092E1D9 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B753A0102AF1343B0092E1D9 /* FSCalendar.framework */; };
+		D9BE3682E0BD7FEFA71E0205 /* Pods_OkusuReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F332558AE03A9540B99423 /* Pods_OkusuReminder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13DCF25CC22A9C014AC6B518 /* Pods-OkusuReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkusuReminder.release.xcconfig"; path = "Target Support Files/Pods-OkusuReminder/Pods-OkusuReminder.release.xcconfig"; sourceTree = "<group>"; };
+		25F332558AE03A9540B99423 /* Pods_OkusuReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OkusuReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7539F7E2AE722760092E1D9 /* OkusuReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkusuReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7539F812AE722760092E1D9 /* OkusuReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkusuReminderApp.swift; sourceTree = "<group>"; };
 		B7539F852AE722770092E1D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		B7539FA92AED64A20092E1D9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		B7539FAC2AED64E60092E1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B7539FD12AEE3DB80092E1D9 /* AllTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTabView.swift; sourceTree = "<group>"; };
+		B753A0102AF1343B0092E1D9 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89AF17F08FA3229035550BC /* Pods-OkusuReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkusuReminder.debug.xcconfig"; path = "Target Support Files/Pods-OkusuReminder/Pods-OkusuReminder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B753A0112AF1343B0092E1D9 /* FSCalendar.framework in Frameworks */,
+				D9BE3682E0BD7FEFA71E0205 /* Pods_OkusuReminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EC51B8D23A06BE611CCA219 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B753A0102AF1343B0092E1D9 /* FSCalendar.framework */,
+				25F332558AE03A9540B99423 /* Pods_OkusuReminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7539F752AE722760092E1D9 = {
 			isa = PBXGroup;
 			children = (
 				B7539F802AE722760092E1D9 /* OkusuReminder */,
 				B7539F7F2AE722760092E1D9 /* Products */,
+				CECEFB6D1C91E9A2D90E92F7 /* Pods */,
+				8EC51B8D23A06BE611CCA219 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +152,15 @@
 			path = Mochiy_Pop_One;
 			sourceTree = "<group>";
 		};
+		CECEFB6D1C91E9A2D90E92F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D89AF17F08FA3229035550BC /* Pods-OkusuReminder.debug.xcconfig */,
+				13DCF25CC22A9C014AC6B518 /* Pods-OkusuReminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7539F8C2AE722770092E1D9 /* Build configuration list for PBXNativeTarget "OkusuReminder" */;
 			buildPhases = (
+				676C79EAA6D77261976F83AF /* [CP] Check Pods Manifest.lock */,
 				B7539F7A2AE722760092E1D9 /* Sources */,
 				B7539F7B2AE722760092E1D9 /* Frameworks */,
 				B7539F7C2AE722760092E1D9 /* Resources */,
+				932329C29A9059E06EF89856 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +229,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		676C79EAA6D77261976F83AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OkusuReminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		932329C29A9059E06EF89856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkusuReminder/Pods-OkusuReminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkusuReminder/Pods-OkusuReminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OkusuReminder/Pods-OkusuReminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7539F7A2AE722760092E1D9 /* Sources */ = {
@@ -335,6 +407,7 @@
 		};
 		B7539F8D2AE722770092E1D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89AF17F08FA3229035550BC /* Pods-OkusuReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +423,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,6 +439,7 @@
 		};
 		B7539F8E2AE722770092E1D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DCF25CC22A9C014AC6B518 /* Pods-OkusuReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,6 +455,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
