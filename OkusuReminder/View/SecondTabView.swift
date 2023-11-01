@@ -7,23 +7,21 @@
 
 
 import SwiftUI
-import FSCalendar
 
-struct SecondTabView: UIViewRepresentable {
-   
-   func makeUIView(context: Context) -> UIView {
-       
-       typealias UIViewType = FSCalendar
-       
-       let fsCalendar = FSCalendar()
-           
-       return fsCalendar
-   }
-   
-   func updateUIView(_ uiView: UIView, context: Context) {
-   }
-}
+struct SecondTabView: View {
+    @State  var selectedDate:Date = Date()
+    var body: some View {
+            DatePicker(selection: $selectedDate,
+                label: { Text("Date") }
+            ).environment(\.locale, Locale(identifier: "ja_JP"))
+            .datePickerStyle(.graphical)
+            .frame(width: 500, height: 900)
+            .background(Color.orange)
+            .accentColor(.mint)
+        }
+    }
 
+    
 struct SecondTabView_Previews: PreviewProvider {
     static var previews: some View {
         SecondTabView()
