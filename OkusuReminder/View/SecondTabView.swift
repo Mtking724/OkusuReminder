@@ -8,19 +8,29 @@
 
 import SwiftUI
 
-struct SecondTabView: View {
-    @State  var selectedDate:Date = Date()
-    var body: some View {
-            DatePicker(selection: $selectedDate,
-                label: { Text("Date") }
-            ).environment(\.locale, Locale(identifier: "ja_JP"))
-            .datePickerStyle(.graphical)
-            .frame(width: 500, height: 900)
-            .background(Color.orange)
-            .accentColor(.mint)
+struct SecondTabView: UIViewRepresentable {
+    func makeUIView(context: Context) -> some UIView {
+        let calendarView = UICalendarView()
+              // カレンダービューの背景色をオレンジに設定
+              calendarView.backgroundColor = UIColor.orange
+              calendarView.tintColor =  UIColor.systemMint
+              return calendarView
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+    }
+    struct SampleView: View {
+        var body: some View {
+            SecondTabView()
+                .padding()
+                .navigationTitle("UICalenderView")
+            //背景色をオレンジにしたい。
+            //薬を飲み終わったらハンコが押されるようにしたい
         }
     }
-
+}
+        
+        
     
 struct SecondTabView_Previews: PreviewProvider {
     static var previews: some View {
