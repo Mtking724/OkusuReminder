@@ -14,6 +14,8 @@ struct SecondTabView: UIViewRepresentable {
               // カレンダービューの背景色をオレンジに設定
               calendarView.backgroundColor = UIColor.orange
               calendarView.tintColor =  UIColor.systemMint
+              calendarView.locale = Locale(identifier: "ja")
+              
               return calendarView
     }
     
@@ -24,6 +26,7 @@ struct SecondTabView: UIViewRepresentable {
             SecondTabView()
                 .padding()
                 .navigationTitle("UICalenderView")
+                .ignoresSafeArea()
             //背景色をオレンジにしたい。
             //薬を飲み終わったらハンコが押されるようにしたい
         }
