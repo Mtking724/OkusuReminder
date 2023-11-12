@@ -20,6 +20,7 @@
 		B7539FAB2AED64A20092E1D9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B7539FA92AED64A20092E1D9 /* OFL.txt */; };
 		B7539FD22AEE3DB80092E1D9 /* AllTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7539FD12AEE3DB80092E1D9 /* AllTabView.swift */; };
 		B753A0112AF1343B0092E1D9 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B753A0102AF1343B0092E1D9 /* FSCalendar.framework */; };
+		B753A0132AFF480E0092E1D9 /* ExtensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B753A0122AFF480E0092E1D9 /* ExtensionFile.swift */; };
 		D9BE3682E0BD7FEFA71E0205 /* Pods_OkusuReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F332558AE03A9540B99423 /* Pods_OkusuReminder.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		B7539FAC2AED64E60092E1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B7539FD12AEE3DB80092E1D9 /* AllTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTabView.swift; sourceTree = "<group>"; };
 		B753A0102AF1343B0092E1D9 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B753A0122AFF480E0092E1D9 /* ExtensionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFile.swift; sourceTree = "<group>"; };
 		D89AF17F08FA3229035550BC /* Pods-OkusuReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkusuReminder.debug.xcconfig"; path = "Target Support Files/Pods-OkusuReminder/Pods-OkusuReminder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B7539F922AE722F10092E1D9 /* FirstModel.swift */,
+				B753A0122AFF480E0092E1D9 /* ExtensionFile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				B7539F9F2AE7F0E00092E1D9 /* FirstTabView.swift in Sources */,
 				B7539F932AE722F10092E1D9 /* FirstModel.swift in Sources */,
 				B7539F952AE723010092E1D9 /* FirstView.swift in Sources */,
+				B753A0132AFF480E0092E1D9 /* ExtensionFile.swift in Sources */,
 				B7539FA32AE7F0FB0092E1D9 /* ThirdTabView.swift in Sources */,
 				B7539F822AE722760092E1D9 /* OkusuReminderApp.swift in Sources */,
 				B7539FA12AE7F0EE0092E1D9 /* SecondTabView.swift in Sources */,
