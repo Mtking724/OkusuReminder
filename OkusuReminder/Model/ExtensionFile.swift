@@ -16,9 +16,13 @@ extension Date{
         self = Calendar.current.date(byAdding: .day, value: 1, to: self)!
     }
     
+    func changeMonth(diff:Int) -> Date {
+        return Calendar.current.date(byAdding: .month, value: diff, to: self)!
+    }
+    
     func getAllDays() -> [Date] {
         
-        var day1st = Date().firstDayOfTheMonth()
+        var day1st = firstDayOfTheMonth()
         
         //Dateの空の配列を宣言する
         var days = [Date]()
@@ -37,6 +41,10 @@ extension Date{
         return days
     }
     
+    //曜日を数値として返す。0:日曜日, 6:土曜日
+    func getWeekDay() -> Int {
+        return Calendar.current.component(.weekday, from: self) - 1
+    }
     //Dateからフォーマット通りにstringに変換する
     func DateToString(format: String) -> String {
         let df = DateFormatter()
